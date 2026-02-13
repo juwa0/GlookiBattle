@@ -1,2 +1,36 @@
-<canvas></canvas>
-<script src = "index.js"></script>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Tiny Valentine Quest</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #070a1a;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      canvas {
+        width: min(1024px, 100vw);
+        height: auto;
+        aspect-ratio: 1024 / 576;
+        display: block;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
